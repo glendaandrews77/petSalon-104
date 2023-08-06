@@ -1,0 +1,12 @@
+//object constructor
+
+function Student(name,age,email){
+    this.name + name;
+    this.age = age;
+    this.email=email;
+}
+let student1 = new Student("Eduardo",20, "edardo@gmail.com");
+let student2 = new Student ("Lala", 22,"Lala@gmail.com");
+
+console.log(student1);
+console.log(student2);
