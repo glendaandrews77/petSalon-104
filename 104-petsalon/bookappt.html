@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bookingappt.js"></script>
+    <link rel="stylesheet" href=bookingappt.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.css" rel="stylesheet">
+   <link rel="stylesheet" href="register.html">
+   
+   
+    <title>Book Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>The Fancy Pancy Pet Spa Appointments</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+            <a href="bookappt.html">Book Appointment</a>
+            <a href="about.html">About</a>  
+        </nav>
+    </header>
+
+
+<main>
+        <div id="calendar"></div>
+        <div id="calendar"></div>
+        <div id="selected-time"></div>
+        <form id="book-form">
+
+        <h2>Add New Event</h2>
+        <form id="eventForm">
+            <label for="grooming">Grooming:</label>
+            <input type="deluxe package" id="Deluxe Package" required>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" required>
+            <label for="eventTime">Event Time:</label>
+            <select id="eventTime" required>
+                <option value="" disabled selected>Select a time</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <!-- Add more available times here -->
+            </select>
+            <button type="button" id="addEventBtn">Add Event</button>
+        </form>
+     </form
+        
+        <fieldset id="pet-details">
+            <legend>Pet Details</legend>
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" required>
+            
+            <label for="petBreed">Breed:</label>
+            <input type="text" id="petBreed" required>
+            
+            <label for="petAge">Age:</label>
+            <input type="text" id="petAge" required>
+            
+            <label>Gender:</label>
+            <label><input type="radio" name="petGender" value="male"> Male</label>
+            <label><input type="radio" name="petGender" value="female"> Female</label>
+            
+            <label>Is Your Pet Chipped?</label>
+            <label><input type="radio" name="isChipped" value="yes"> Yes</label>
+            <label><input type="radio" name="isChipped" value="no"> No</label>
+            
+            <label>Up-to-date Vaccinations:</label>
+            <label><input type="radio" name="vaccinations" value="yes"> Yes</label>
+            <label><input type="radio" name="vaccinations" value="no"> No</label>
+        </fieldset>
+        
+        <fieldset id="pet-owner">
+            <legend>Pet Owner Information</legend>
+            <label for="ownerName">Owner's Name:</label>
+            <input type="text" id="ownerName" required>
+            
+            <label for="ownerAddress">Address:</label>
+            <input type="text" id="ownerAddress" required>
+            
+            <label for="ownerPhone">Phone:</label>
+            <input type="tel" id="ownerPhone" required>
+        </fieldset>
+        
+        <fieldset id="buttons">
+            <button type="submit">Book Now</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+
+         <!-- Thank You message at the bottom -->
+         <div class="thank-you">
+            <p>Thank you for booking an appointment with us! We look forward to seeing you and your pet.</p>
+        </div>
+</main>
+
+
+
+    <footer>
+        <p>Phone: 757-497-5621</p><p>Address: 25252 Loving Pets Lane, Virginia Beach, Virginia 23462</p><p>Email: TheFancyPancyPetSpa@Furbabies.com for assistance.</p>
+
+        <div>
+            Having issues booking appointments, please contact store. We will be happy to assist.
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.js"></script>
+    <script src="bookappt.js"></script>
+    <script src="bookappt.css">bookappt</script>
+ 
+</html>
